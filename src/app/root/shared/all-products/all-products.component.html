@@ -1,0 +1,25 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2 col-xs-2" *ngFor="let product of products;let i= index" class="main" >
+      <div>
+         <a routerLink="/product">
+          <img src="{{product.url}}" class="image"> 
+         </a>
+      </div>
+
+      <div>
+      Name :  {{product.name}} <br>
+      <!-- category:  {{product.category}}<br> -->
+      Price:  {{product.price}}<br>
+      <!-- <span *ngIf="isPrivileged=='Privileged'">   DiscountPrice: {{products[index].discounted_price}} </span>  -->
+      </div>
+      <!-- <input type="submit" value=" Add To Cart " (click)="addToCart(product.id)">  -->
+      <!-- <button class="btn btn-success pull-right" ><a routerLink="/Service/Sign_in">Add To Cart</a></button> -->
+    </div>
+  </div>
+</div>
+
+
+
+
